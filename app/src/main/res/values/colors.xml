@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="paper">#FFE0C9A6</color>
+    <color name="dark_paper">#FF9F8F77</color>
+    <color name="mild_paper">#FFC5B193</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green_mountain_meadow">#FF30BA8F</color>
+    <color name="grey">#FFC1B7B0</color>
+    <color name="red">#FFFF0000</color>
+</resources>

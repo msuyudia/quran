@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_total_verses"
+        style="@style/text_paper_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="@string/total_verses"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_chapter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_chapter"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_search_verse"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_chapter_verse"/>
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dp_8">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/ic_warning"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title_alert"
+        style="@style/text_paper_20_bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginEnd="@dimen/dp_8"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_alert"
+        tools:text="@string/title_delete_folder"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_desc_alert"
+        style="@style/text_paper_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginEnd="@dimen/dp_8"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_alert"
+        tools:text="@string/desc_delete_folder"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btn_alert_left"
+        style="@style/text_red_20_bold"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toBottomOf="@id/btn_alert_right"
+        app:layout_constraintEnd_toStartOf="@id/btn_alert_right"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_alert_right"
+        tools:text="@string/no"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_alert_right"
+        style="@style/PaperButtonTheme"
+        android:textSize="@dimen/sp_20"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_alert_left"
+        app:layout_constraintTop_toBottomOf="@id/tv_desc_alert"
+        tools:text="@string/yes"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

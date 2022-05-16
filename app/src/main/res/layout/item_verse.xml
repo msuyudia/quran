@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_latin_verse_number"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="match_parent"
+        android:background="@color/mild_paper"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_20"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toBottomOf="@id/vertical_line_verse"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="286"/>
+
+    <View
+        android:id="@+id/horizontal_line_verse"
+        android:layout_width="@dimen/dp_1"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toBottomOf="@id/tv_latin_verse_number"
+        app:layout_constraintStart_toEndOf="@id/tv_latin_verse_number"
+        app:layout_constraintTop_toTopOf="@id/tv_latin_verse_number"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_bookmark_verse"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_bookmark"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_arab_verse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_8"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_24"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/horizontal_line_verse"
+        app:layout_constraintTop_toBottomOf="@id/iv_bookmark_verse"
+        tools:text="وَرَاَيْتَ النَّاسَ يَدْخُلُوْنَ فِيْ دِيْنِ اللّٰهِ اَفْوَاجًاۙ"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_latin_verse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_4"
+        android:layout_marginEnd="@dimen/dp_8"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_16"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/horizontal_line_verse"
+        app:layout_constraintTop_toBottomOf="@id/tv_arab_verse"
+        tools:text="waraa"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_translate_verse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_4"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginEnd="@dimen/dp_8"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_16"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/horizontal_line_verse"
+        app:layout_constraintTop_toBottomOf="@id/tv_latin_verse"
+        tools:text="dan engkau melihat manusia berbondong-bondong masuk agama Allah,"/>
+
+    <View
+        android:id="@+id/vertical_line_verse"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginTop="@dimen/dp_1"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_translate_verse"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Al-Quran Indonesia</string>
+    <string name="find_chapter_verse">Cari Surat/Ayat</string>
+    <string name="total_chapters">Total surat: %d</string>
+    <string name="total_verses">Total ayat: %d</string>
+    <string name="al_quran">Al-Quran</string>
+    <string name="chapter">Surat</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="add_new_folder">Tambah Folder Baru</string>
+    <string name="folder_name">Nama Folder</string>
+    <string name="last_read">Terakhir dibaca</string>
+    <string name="last_read_verse">QS: %s (%s): Ayat %s</string>
+    <string name="success_add_bookmark">Berhasil menyimpan QS: %s (%s): Ayat %s di folder %s</string>
+    <string name="success_add_folder">Berhasil membuat folder %s</string>
+    <string name="title_delete_folder">Apakah kamu yakin ingin menghapus folder %s?</string>
+    <string name="desc_delete_folder">Jika kamu menghapus folder %s maka semua ayat yang sudah dibookmark dengan nama folder %s akan ikut terhapus</string>
+    <string name="title_delete_bookmark_verse">Apakah kamu yakin ingin menghapus QS: %s (%s): Ayat %s dari folder %s?</string>
+    <string name="yes">Ya</string>
+    <string name="no">Tidak</string>
+    <string name="add">Tambah</string>
+</resources>
